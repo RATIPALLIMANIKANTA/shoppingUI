@@ -1,5 +1,6 @@
 import React from 'react'
 import WomanCollection from './WomanCollection'
+import { useNavigate } from 'react-router-dom';
 
 const WomanCollectionPage = (props) => {
   const{title,image1,image2,image3,image4,image5,image6,name1,name2,name3,name4,name5,name6} = props.ladiesFashion
