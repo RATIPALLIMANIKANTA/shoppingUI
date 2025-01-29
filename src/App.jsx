@@ -8,6 +8,7 @@ import MenCollectionPage from './shoppingfolder/components/MenCollectionPage'
 import WomanCollectionPage from './shoppingfolder/components/WomanCollectionPage'
 import { Gents,Ladies } from './shoppingfolder/data'
 import MenItemPage from './shoppingfolder/components/MenItemPage'
+import WomanItemPage from './shoppingfolder/components/WomanItemPage'
 
 const App = () => {
   const[gentsFashion,setGentsFashion] = useState(Gents)
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/woman"  element={<WomanCollectionPage ladiesFashion= {ladiesFashion}/>}/>
 
         <Route path="/men/:itemName" element={<MenItemPage/>} />
+        <Route path="/woman/:itemName" element={<WomanItemPage/>} />
 
       </Routes>
     
